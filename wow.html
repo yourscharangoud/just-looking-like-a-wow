@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Looking Like a Wow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .section {
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #007fff;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        /* h1{
+            font-size: 20px;
+        } */
+
+        .center {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .section ul {
+            display: flex;
+        }
+
+        .section ul li {
+            padding: 15px;
+            margin: 5px;
+            border-radius: 50%;
+            list-style: none;
+            border: 2px solid #fff;
+        }
+
+        #utext {
+            text-transform: capitalize;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="section" id="main">
+        <div class="center">
+            <img src="logo.png" alt="logo" height="200px" width="200px">
+            <br>
+            <h1>RGlitz Technologies</h1>
+        </div>
+
+        <h2>👉 <span id="utext">Blue</span></h2>
+
+        <div class="center">
+            <h3 id="utext">Sooo Beautiful 😍, Sooo Elegant ✨</h3>
+            <h3>Just Looking Like a Wow 🔥</h3>
+        </div>
+        
+        <div class="center">
+            <h3>Click Here 👇</h3>
+            <ul>
+                <li style="background-color: black;" onclick="color('black')"> </li>
+                <li style="background-color: orange;" onclick="color('orange')"> </li>
+                <li style="background-color: magenta;" onclick="color('magenta')"> </li>
+                <li style="background-color: purple;" onclick="color('purple')"> </li>
+            </ul>
+        </div>
+
+
+    </div>
+    <script>
+        function color(val) {
+            document.getElementById('utext').textContent = val;
+            document.getElementById('main').style.backgroundColor = val;
+        }
+    </script>
+</body>
+</html>
